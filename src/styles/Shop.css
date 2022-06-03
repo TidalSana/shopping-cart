@@ -1,0 +1,98 @@
+.shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.shop-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background: #d9be6c;
+}
+.shop-text {
+  font-weight: 900;
+  color: #fff;
+}
+
+.keyboards-shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.main-shopping-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  gap: 20px;
+}
+
+/* div holding ALL of the preview content */
+.image-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 400px;
+  /* overflow: hidden; */
+}
+/* div holding the individual images */
+.preview-panel {
+  text-align: center;
+  height: 250px;
+  margin: 1em;
+}
+/* img class for img elements in preview section*/
+.keyboard-pictures-preview {
+  width: 100%;
+  height: fit-content;
+  padding: 1px;
+}
+
+/* div that holds the main image non-preview */
+.image-holder {
+  height: 400px;
+  min-width: 300px;
+  max-width: 650px;
+  overflow: hidden;
+}
+/* img class for img elements in main section */
+.keyboard-pictures-main {
+  width: 100%;
+  height: fit-content;
+}
+.active-img {
+  padding: 2px;
+  transform: scale(1.2);
+  border: 2px solid red;
+}
+.product-form {
+  display: flex;
+  justify-content: center;
+  height: 700px;
+  margin: 1.5em;
+}
+.shop-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+.options,
+.colors,
+.pcb,
+.quantity {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}

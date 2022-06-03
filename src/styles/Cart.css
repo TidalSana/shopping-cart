@@ -1,0 +1,120 @@
+.hidden {
+  display: none;
+}
+.cart {
+  gap: 10px;
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  background: rgba(99, 95, 95, 0.233);
+  overflow: hidden;
+}
+.white-section {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  background: #fff;
+}
+.white-section {
+  right: 0;
+  gap: 5px;
+  width: 30vw;
+  padding: 1.5em;
+  margin: 1em;
+  border-radius: 1%;
+}
+.cart-title-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.cart-title {
+  font-size: 1.6em;
+}
+.overflow {
+  overflow: hidden;
+}
+.cart-items {
+  height: fit-content;
+}
+.item-cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  margin: 5px;
+  max-height: 300px;
+}
+.item-text > * {
+  margin: 0.5rem;
+  font-size: 12px;
+  color: grey;
+}
+.item-pictures {
+  height: fit-content;
+  width: 30%;
+}
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #464545;
+  width: 100%;
+}
+.total > * {
+  margin: 1em;
+}
+.total-title {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.total-amount {
+  font-size: 1.3em;
+}
+.checkout {
+  padding: 5px;
+  margin: 1em;
+  max-width: 150px;
+}
+
+@media only screen and (min-width: 300px) {
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50%;
+    max-height: 300px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50%;
+    max-height: 300px;
+  }
+}

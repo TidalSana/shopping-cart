@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 5vh;
+  background: #403c2c;
+  color: #d9be6c;
+}
+.title {
+  font-weight: bolder;
+  font-size: 2em;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 50%;
+}
+a {
+  text-decoration: none;
+  color: #d9c896;
+  cursor: pointer;
+}
+a:hover,
+.shopping-cart:hover {
+  color: #f0e6cb;
+  transition: 0.2s;
+}
+.shopping-cart {
+  color: #d9c896;
+  cursor: pointer;
+}

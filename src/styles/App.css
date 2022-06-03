@@ -1,0 +1,24 @@
+html,
+body {
+  overflow-x: hidden;
+  background: #fff;
+}
+.App {
+  background: #fff;
+  text-align: center;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  overflow: hidden;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #403c2c;
+  color: #d9be6c;
+  text-align: center;
+  min-height: 5vh;
+}
