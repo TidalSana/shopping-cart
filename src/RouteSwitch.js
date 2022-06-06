@@ -38,8 +38,14 @@ const RouteSwitch = () => {
 
   return (
     <BrowserRouter>
-      <Cart items={cart} total={total} toggle={modal} change={toggleModal} />
-      <Nav change={toggleModal} />
+      <Cart
+        items={cart}
+        setItem={setCart}
+        total={total}
+        toggle={modal}
+        change={toggleModal}
+      />
+      <Nav change={toggleModal} number={cart.length} />
       <div className="page-container">
         <div className="content-container">
           <Routes>

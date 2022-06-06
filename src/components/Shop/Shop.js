@@ -129,7 +129,7 @@ const Shop = (props) => {
           <div className="image-holder">{image}</div>
         </div>
         <div className="product-form">
-          <Form click={click} change={handleChange} cost={product.price} />
+          <Form click={click} change={handleChange} item={product} />
         </div>
       </div>
     </div>

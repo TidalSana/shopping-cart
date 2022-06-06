@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Mukta+Vaani&family=Space+Mono&family=Work+Sans&display=swap");
+
 .hidden {
   display: none;
+}
+.overflow {
+  overflow: hidden;
 }
 .cart {
   gap: 10px;
@@ -12,6 +17,7 @@
 .white-section {
   display: flex;
   position: fixed;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   height: fit-content;
@@ -28,14 +34,31 @@
 .cart-title-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
+  margin-bottom: 1.5em;
   width: 100%;
 }
 .cart-title {
+  font-family: "Work Sans", sans-serif;
   font-size: 1.6em;
 }
-.overflow {
-  overflow: hidden;
+.close {
+  border: none;
+  background: none;
+  padding: 2px;
+  font-size: 2em;
+  color: #9c9797;
+  transition: 0.3s;
+}
+.close:hover {
+  color: #000000;
+  cursor: pointer;
+}
+.empty-text {
+  margin: 1.5em;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
 }
 .cart-items {
   height: fit-content;
@@ -45,6 +68,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-family: "Libre Franklin", sans-serif;
   gap: 5px;
   width: 100%;
   margin: 5px;
@@ -59,6 +83,19 @@
   height: fit-content;
   width: 30%;
 }
+.delete-item {
+  border: none;
+  background: none;
+  color: #000000;
+  font-size: 1.3em;
+}
+.delete-item:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 3px;
+  background: #000000;
+  color: #fff;
+}
 .total {
   display: flex;
   flex-direction: row;
@@ -71,16 +108,28 @@
   margin: 1em;
 }
 .total-title {
+  font-family: "Mukta Vaani", sans-serif;
   font-size: 1.5em;
   font-weight: 900;
 }
 .total-amount {
+  font-family: "Libre Franklin", sans-serif;
   font-size: 1.3em;
 }
 .checkout {
-  padding: 5px;
+  background: #000000;
+  color: #f4f4f4;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
   margin: 1em;
   max-width: 150px;
+}
+.checkout:hover {
+  color: #000000;
+  background: #f4f4f4;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 300px) {

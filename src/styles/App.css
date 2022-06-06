@@ -22,3 +22,7 @@ body {
   text-align: center;
   min-height: 5vh;
 }
+.footer-link {
+  color: #d1bd82;
+  text-decoration: underline;
+}

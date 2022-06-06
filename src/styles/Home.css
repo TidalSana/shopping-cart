@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Mukta+Vaani&display=swap");
+
 .home-landing {
   display: flex;
   flex-direction: column;
@@ -25,10 +27,12 @@
 }
 .landing-title {
   font-weight: bolder;
+  font-family: "Libre Franklin", sans-serif;
   font-size: 1.4rem;
 }
 .landing-para {
   font-size: 1.2em;
+  font-family: "Mukta Vaani", sans-serif;
 }
 .landing-title,
 .landing-para {
@@ -86,10 +90,12 @@
 }
 .showcase-title {
   font-weight: bolder;
+  font-family: "Libre Franklin", sans-serif;
   font-size: 1.3rem;
   margin: 1.2rem;
 }
 .showcase-text {
+  font-family: "Mukta Vaani", sans-serif;
   margin: 1.3rem;
 }
 .board-image {
@@ -130,6 +136,7 @@
 }
 .recommended-title {
   font-weight: bolder;
+  font-family: "Libre Franklin", sans-serif;
   font-size: 1.4rem;
 }
 .react-player {

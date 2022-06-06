@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Mukta+Vaani&family=Space+Mono&family=Work+Sans&display=swap");
+
+.hidden {
+  display: none;
+}
 .navigation {
   display: flex;
   justify-content: space-around;
@@ -7,6 +12,7 @@
   color: #d9be6c;
 }
 .title {
+  font-family: "Space Mono", monospace;
   font-weight: bolder;
   font-size: 2em;
 }
@@ -19,6 +25,7 @@
 }
 a {
   text-decoration: none;
+  font-family: "Work Sans", sans-serif;
   color: #d9c896;
   cursor: pointer;
 }
@@ -29,5 +36,23 @@ a:hover,
 }
 .shopping-cart {
   color: #d9c896;
+  font-size: 1.2em;
   cursor: pointer;
+}
+.badge-warning[href] {
+  background-color: #c67605;
+}
+.badge {
+  font-size: 12px;
+  background: #ff0000;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+}
+#label-cart {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
 }

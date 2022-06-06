@@ -1,17 +1,26 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import { faCircleXmark, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import Keyboards from "./Shop/Keyboards";
 import "../styles/Cart.css";
 
 const Cart = (props) => {
-  const { items, toggle, change, total } = props;
+  const { items, setItem, toggle, change, total } = props;
 
   const [empty, setEmpty] = useState(false);
 
   useEffect(() => {
     if (items.length > 0) return setEmpty(true);
+    console.log("not empty");
+    return setEmpty(false);
   }, [items]);
+
+  const removeItem = (e) => {
+    let itemToRemove = parseInt(e.currentTarget.parentNode.id);
+    let removeProduct = items.filter((item, index) => index !== itemToRemove);
+
+    setItem(removeProduct);
+  };
 
   return (
     <div
@@ -31,7 +40,7 @@ const Cart = (props) => {
           </button>
         </div>
         <div className={`${empty ? "hidden" : ""} empty`}>
-          <p>Your Shopping Cart is empty!</p>
+          <p className="empty-text">Your Shopping Cart is empty!</p>
         </div>
         <div className="cart-items">
           {items.map((item, index) => (
@@ -49,6 +58,9 @@ const Cart = (props) => {
                 <p className="amount">Quantity: {item.quantity}</p>
                 <p className="cost">Cost: ${item.price}</p>
               </div>
+              <button className="delete-item" onClick={removeItem}>
+                <FontAwesomeIcon icon={faXmark} size="2x" />
+              </button>
             </div>
           ))}
         </div>
