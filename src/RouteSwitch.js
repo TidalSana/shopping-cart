@@ -37,7 +37,7 @@ const RouteSwitch = () => {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Cart
         items={cart}
         setItem={setCart}
