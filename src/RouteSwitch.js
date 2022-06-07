@@ -37,7 +37,7 @@ const RouteSwitch = () => {
   };
 
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Cart
         items={cart}
         setItem={setCart}
