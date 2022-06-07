@@ -37,7 +37,7 @@ const RouteSwitch = () => {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/shopping-cart">
       <Cart
         items={cart}
         setItem={setCart}
@@ -49,7 +49,7 @@ const RouteSwitch = () => {
       <div className="page-container">
         <div className="content-container">
           <Routes>
-            <Route path="/shopping-cart" element={<App />} />
+            <Route path="/" element={<App />} />
             <Route
               path="/shop"
               element={

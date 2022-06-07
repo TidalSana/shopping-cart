@@ -16,12 +16,12 @@ const Navigation = (props) => {
   return (
     <nav className="navigation">
       <div className="logo">
-        <Link to="/shopping-cart">
+        <Link to="/">
           <h1 className="title">Keebs</h1>
         </Link>
       </div>
       <ul className="nav-links">
-        <Link to="/shopping-cart">
+        <Link to="/">
           <li className="links">Home</li>
         </Link>
         <Link to="/shop">
